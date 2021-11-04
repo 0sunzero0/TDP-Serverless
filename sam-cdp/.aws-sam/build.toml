@@ -9,8 +9,8 @@ manifest_hash = ""
 packagetype = "Zip"
 functions = ["HelloWorldFunction"]
 
-[function_build_definitions.b16a6dae-58ea-456d-98f2-bad6a3bb9d22]
-codeuri = "C:\\Users\\82107\\TDP-Serverless\\sam-cdp\\read_all_til"
+[function_build_definitions.b08766a4-5950-455a-9987-3dc6ccdbce39]
+codeuri = "C:\\Users\\82107\\TDP-Serverless\\sam-cdp\\write"
 runtime = "python3.7"
 architecture = "x86_64"
 manifest_hash = ""
