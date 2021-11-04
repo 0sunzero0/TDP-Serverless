@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-cdp"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1tlvxfdup23ji"
+s3_prefix = "sam-cdp"
+region = "ap-northeast-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
