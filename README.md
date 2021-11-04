@@ -1,5 +1,4 @@
 # TDP-Serverless
 
-write 기능 SAM 프레임워크 활용 서버리스 배포
-
-MongoDB(EC2) AWS secret manager 연동 
+SAM 프레임워크 활용하여 서버리스 배포
+Lambda, MongoDB, AWS Secret Manager 연동해서 인프라 구성
