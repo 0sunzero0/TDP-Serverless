@@ -21,6 +21,24 @@ Resources:
           Properties:
             Path: /hello
             Method: get
+  WriteFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: WriteFunction
+      Handler: app.lambda_handler
+      Runtime: python3.7
+      Events:
+        Write:
+          Type: Api
+          Properties:
+            Path: /til
+            Method: post
+      Policies:
+      - Statement:
+        - Sid: AWSSecretsManagerGetSecretValuePolicy
+          Effect: Allow
+          Action: secretsmanager:GetSecretValue
+          Resource: arn:aws:secretsmanager:ap-northeast-2:389654145759:secret:cdp-secret-01-wQPsRt
 Outputs:
   HelloWorldApi:
     Description: API Gateway endpoint URL for Prod stage for Hello World function
